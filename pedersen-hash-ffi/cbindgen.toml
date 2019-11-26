@@ -1,0 +1,23 @@
+header = """
+/* pedersen_hash_ffi Header */
+
+#ifdef __cplusplus
+extern "C" {{
+#endif
+"""
+trailer = """
+#ifdef __cplusplus
+} /* extern "C" */
+#endif
+"""
+
+include_guard = "PEDERSEN_HASH_FFI_H"
+include_version = true
+language = "C"
+
+[export]
+prefix = "pedersen_hash_ffi_"
+
+[parse]
+parse_deps = true
+include = ["pedersen-hash"]

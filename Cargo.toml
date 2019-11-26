@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+  "pedersen-hash",
+  "pedersen-hash-ffi"
+]

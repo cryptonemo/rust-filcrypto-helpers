@@ -1,0 +1,27 @@
+[package]
+name = "pedersen-hash-ffi"
+version = "0.1.0"
+authors = ["nemo <nemo@protocol.ai>"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+edition = "2018"
+publish = false
+
+[lib]
+# cdylib is required by the FFI example/test
+crate-type = ["rlib", "cdylib", "staticlib"]
+
+[dependencies]
+drop_struct_macro_derive = "0.4.0"
+ffi-toolkit = "0.4.0"
+failure = "0.1.5"
+libc = "0.2.58"
+pretty_env_logger = "0.3.0"
+log = "0.4.7"
+once_cell = "0.2.4"
+nodrop = "0.1.13"
+pedersen-hash = { path = "../pedersen-hash" }
+
+[build-dependencies]
+bindgen = "0.51.1"
+cbindgen = "0.9.1"
