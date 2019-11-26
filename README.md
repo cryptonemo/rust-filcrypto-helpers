@@ -18,7 +18,7 @@ cd ..
 # Verify things work
 $ go build bindings.go
 
-# Run sime test
+# Run simple test
 $ go test bindings_test.go -v
 === RUN   TestPedersenHash
 input:  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
