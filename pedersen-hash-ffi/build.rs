@@ -1,6 +1,7 @@
 extern crate cbindgen;
 
 use std::env;
+use std::path::PathBuf;
 
 fn main() {
     //println!("cargo:rerun-if-changed=src/");
@@ -15,5 +16,5 @@ fn main() {
 
     cbindgen::generate_with_config(&crate_dir, config)
         .unwrap()
-        .write_to_file(out_dir.join("pedersen_hash.h"));
+        .write_to_file(out_dir.join("../../../../../pedersen_hash_ffi.h"));
 }

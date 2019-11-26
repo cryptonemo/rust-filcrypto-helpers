@@ -11,9 +11,6 @@ Installation
 # Install rust and cbindgen and go
 
 cargo build --release --all
-cd pedersen-hash-ffi
-./cbindgen
-cd ..
 
 # Verify things work
 $ go build bindings.go
@@ -22,7 +19,6 @@ $ go build bindings.go
 $ go test bindings_test.go -v
 === RUN   TestPedersenHash
 input:  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
-pedersen_hash_ffi called
 output:  [216 21 67 136 189 3 97 66 78 166 184 57 243 109 73 57 140 151 139 155 161 138 12 184 161 12 54 29 20 83 138 15]
 --- PASS: TestPedersenHash (0.09s)
 PASS
