@@ -9,6 +9,6 @@ import (
 func TestSimplePedersenHash(t *testing.T) {
 	var input [64]byte
 	fmt.Println("input: ", input)
-	output := helpers.PedersenHashFFI(input[:])
+	output := helpers.PedersenHash(input[:])
 	fmt.Println("output: ", output);
 }
