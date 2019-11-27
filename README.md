@@ -1,7 +1,8 @@
 
-_Installation_
+*Installation*
 
 ```
+$ cd rust-filcrypto-helpers
 $ ./build.sh
 Cleaning build area ...
 Building project and gathering linker flags ...
