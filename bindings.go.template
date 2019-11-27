@@ -4,7 +4,7 @@ import (
         "unsafe"
 )
 
-// #cgo LDFLAGS: ${SRCDIR}/target/release/libfilcrypto_helpers_ffi.a -lutil -lutil -ldl -lrt -lpthread -lgcc_s -lc -lm -lrt -lpthread -lutil -lutil
+// #cgo LDFLAGS: ${SRCDIR}/target/release/libfilcrypto_helpers_ffi.a @LIBS@
 // #include "./target/release/filcrypto_helpers_ffi.h"
 import "C"
 
