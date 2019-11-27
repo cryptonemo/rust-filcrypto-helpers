@@ -1,5 +1,5 @@
 header = """
-/* pedersen_hash_ffi Header */
+/* filcrypto_helpers_ffi Header */
 
 #ifdef __cplusplus
 extern "C" {{
@@ -11,13 +11,13 @@ trailer = """
 #endif
 """
 
-include_guard = "PEDERSEN_HASH_FFI_H"
+include_guard = "FILCRYPTO_HELPERS_FFI_H"
 include_version = true
 language = "C"
 
 [export]
-prefix = "pedersen_hash_ffi_"
+prefix = "filcrypto_helpers_ffi_"
 
 [parse]
 parse_deps = true
-include = ["pedersen-hash"]
+include = ["filcrypto-helpers"]

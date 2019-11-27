@@ -1,5 +1,5 @@
 [package]
-name = "pedersen-hash-ffi"
+name = "filcrypto-helpers-ffi"
 version = "0.1.0"
 authors = ["nemo <nemo@protocol.ai>"]
 license = "MIT OR Apache-2.0"
@@ -20,7 +20,7 @@ pretty_env_logger = "0.3.0"
 log = "0.4.7"
 once_cell = "0.2.4"
 nodrop = "0.1.13"
-pedersen-hash = { path = "../pedersen-hash" }
+filcrypto-helpers = { path = "../filcrypto-helpers" }
 
 [build-dependencies]
 bindgen = "0.51.1"

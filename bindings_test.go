@@ -1,14 +1,14 @@
-package pedersen_hash_test
+package filcrypto_helpers_test
 
 import (
-	ped "../rust-pedersen-hash"
+	helpers "../rust-filcrypto-helpers"
 	"fmt"
 	"testing"
 )
 
-func TestPedersenHash(t *testing.T) {
+func TestSimplePedersenHash(t *testing.T) {
 	var input [64]byte
 	fmt.Println("input: ", input)
-	output := ped.PedersenHashFFI(input[:])
+	output := helpers.PedersenHashFFI(input[:])
 	fmt.Println("output: ", output);
 }

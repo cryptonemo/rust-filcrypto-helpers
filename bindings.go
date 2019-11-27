@@ -1,11 +1,11 @@
-package pedersen_hash
+package filcrypto_helpers
 
 import (
         "unsafe"
 )
 
-// #cgo LDFLAGS: ${SRCDIR}/target/release/libpedersen_hash_ffi.a -lutil -lutil -ldl -lrt -lpthread -lgcc_s -lc -lm -lrt -lpthread -lutil -lutil
-// #include "./pedersen_hash_ffi.h"
+// #cgo LDFLAGS: ${SRCDIR}/target/release/libfilcrypto_helpers_ffi.a -lutil -lutil -ldl -lrt -lpthread -lgcc_s -lc -lm -lrt -lpthread -lutil -lutil
+// #include "./target/release/filcrypto_helpers_ffi.h"
 import "C"
 
 const outputHashLength = 32
@@ -14,8 +14,7 @@ func goBytes(src *C.uint8_t, size C.size_t) []byte {
         return C.GoBytes(unsafe.Pointer(src), C.int(size))
 }
 
-func PedersenHashFFI(preimage []byte) [32]byte {
-
+func PedersenHash(preimage []byte) [32]byte {
         preimageCBytes := C.CBytes(preimage[:])
 	defer C.free(preimageCBytes)
 

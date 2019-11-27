@@ -1,5 +1,5 @@
 [package]
-name = "pedersen-hash"
+name = "filcrypto-helpers"
 version = "0.1.0"
 authors = ["DrPeterVanNostrand <jnz@riseup.net>", "nemo <nemo@protocol.ai"]
 edition = "2018"
